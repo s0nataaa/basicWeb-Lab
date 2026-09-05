@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #0096FF;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0px 4px 4px black;
+    margin: 15px 65px 15px 0;
+}
+
+.navlink-active {
+    color: #0096FF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 3px 12px;
+}
+
+.navlink {
+    color: white    ;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 3px 12px;
+}
+
+.card-service {
+    border-radius: 12px;
+    border: 4px solid #0096FF;
+    background-color: aliceblue;
+    padding: 2px 15px 5px 15px;
+    margin: 10px 20px 30px 5px;
+    box-shadow: 0 4px 8px rgb(22, 41, 137);
+}
+
+.service-title {
+    color: #0096FF;
+    background-color:white; 
+    border-radius: 12px;
+    padding: 6px;
+    margin-right: 1100px;
+    border: 2px solid #0096FF;
+}
+
+#image-table {
+    width: 100%;
+    border: none;
+    border-spacing: 0;
+}
+
+#image-table td {
+    text-align: center;
+    vertical-align: top;
+    width: 33.3%;
+}
+
+#image-table img {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 8px solid #0096FF;
+}
+
+#interested-text {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 8px 0;
+    width: fit-content;
+    color: #0096FF;
+    border: 5px solid #0096FF;
+    font-weight: bold;  
+    text-align: center;
+    font-size: 21px;
+    box-shadow: 0 4px 8px rgba(0, 200, 255, 0.6);
+}
+
+#apply-box {
+    background-color: aliceblue;
+    border-radius: 12px;
+    border: 4px solid #0096FF;
+    padding: 20px;
+    margin: 20px 10px 20px 0;
+    max-width: 650px;
+}
+
+#apply-box table {
+    width: 100%;
+}
+
+#apply-box td.label-col {
+    font-weight: bold;
+    width: 180px;
+    vertical-align: top;
+}
+#apply-box td {
+    vertical-align: top;
+}
+
+.input-text {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 3px solid #0096FF;
+    border-radius: 8px;
+}
+
+.submit-button {
+    background: #0096FF;
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+#logo-text {
+    color: #0096FF;
+    text-shadow: 0 4px 8px #00c8ff;
+    -webkit-text-stroke-color: black;
+}
