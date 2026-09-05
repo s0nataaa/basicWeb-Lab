@@ -13,7 +13,7 @@ body {
     border-radius: 8px;
     padding: 10px 0px;
     background-color: #191970;
-    margin: 20px 15px;
+    margin: 20px 0;
 }
 
 .navbar {
@@ -208,4 +208,58 @@ body {
     height: 90px;
     padding: 0 10px;
     box-sizing: border-box;
+}
+
+#proses-body {
+    font-family: sans-serif; 
+    background: linear-gradient(white, lightblue); 
+    height: 105vh;
+}
+
+#proses-wrapper {
+    text-align: center;
+}
+
+#proses-text-proses {
+    margin-top: 67px;
+    color: #0096FF;
+}
+
+#img-proses {
+    max-width: 80%;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#home-button {
+    display: inline-block;
+    margin: 16px;
+    padding: 15px 50px;
+    background-color: #0096FF;
+    color: white;
+    text-decoration: none;
+    border: 4px solid rgba(6, 6, 125, 0.427);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0 4px 8px #0044ff;  
+}
+
+#note-proses {
+    background: rgb(86, 86, 86);
+    padding: 10px 50px 10px 15px;
+    border-radius: 12px;
+    border: 4px solid black;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    margin: 8px 5px;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+#thanks-text-proses {
+    color: #0096FF;
 }
