@@ -4,6 +4,18 @@ body {
     font-family: sans-serif;
 }
 
+#logo-text {
+    color: white;
+    box-shadow: 0 4px 20px #89CFF0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 3px solid #0096FF;
+    border-radius: 8px;
+    padding: 10px 0px;
+    background-color: #191970;
+    margin: 20px 15px;
+}
+
 .navbar {
     background-color: #0096FF;
     border-radius: 12px;
@@ -40,22 +52,9 @@ body {
     color: #0096FF;
 }
 
-.card-service {
-    border-radius: 12px;
-    border: 4px solid #0096FF;
-    background-color: aliceblue;
-    padding: 2px 15px 5px 15px;
-    margin: 10px 20px 30px 5px;
-    box-shadow: 0 4px 8px rgb(22, 41, 137);
-}
-
 .service-title {
     color: #0096FF;
-    background-color:white; 
-    border-radius: 12px;
-    padding: 6px;
-    margin-right: 1100px;
-    border: 2px solid #0096FF;
+    background-color: white;
 }
 
 .image-top ul, .image-bot ul {
@@ -87,12 +86,13 @@ body {
     object-fit: cover;
     border-radius: 8px;
     border: 8px solid #0096FF;
-    transition: border 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .image-top img:hover, .image-bot img:hover{
     border: 16px solid #FF69B4;
     border-radius: 12px;
+    box-shadow: 0 0 150px pink;
 }
 
 #interested-text {
@@ -135,8 +135,11 @@ body {
     width: 100%;
     max-width: 300px;
     padding: 8px;
-    border: 3px solid #0096FF;
+    border: 5px solid #0096FF;
     border-radius: 8px;
+    background-color: #FF69B4;
+    color: white;
+    font-weight: bold;
 }
 
 .submit-button {
@@ -151,19 +154,58 @@ body {
     font-size: 16px;
 }
 
-#logo-text {
+#service-text {
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: 4px solid #0096FF;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    font-weight: bold;
     color: #0096FF;
-    text-shadow: 0 4px 4px #0062ff95;
-    -webkit-text-stroke: black;
-    font-family: 'Montserrat', sans-serif;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px #0096FF;
+    font-size: 21px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin-bottom: 30px;
+}
+
+.card-service {
+    width: 45%;
+    border: 4px solid  #0096FF;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .card-service th, .card-service td {
-    border: 3px solid #0096FF;
-    border-collapse: collapse;
+    border: 4px solid #0096FF;
+    padding: 20px;
+    border-top: 4px solid #0096FF;
+    border-right: none;
+    border-left: none;
+    border-bottom: 4px solid #0096FF;
+    text-align: center;
+    font-size: 18px;
 }
 
 .card-service th {
-    background-color: #FF69B4;
+    background-color: #000ad1ef;
     color: white;
+}
+
+.card-service, .service-title {
+    background-color: aliceblue;
+}
+
+.service-title {
+    color: white;
+    height: 90px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
