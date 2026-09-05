@@ -1,3 +1,5 @@
+@import url('https://googleapis.com');
+
 body {
     font-family: sans-serif;
 }
@@ -30,6 +32,12 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 8px;
     padding: 3px 12px;
+    transition-duration: 0.25s;
+}
+
+.navlink:hover {
+    background-color: white;
+    color: #0096FF;
 }
 
 .card-service {
@@ -50,25 +58,41 @@ body {
     border: 2px solid #0096FF;
 }
 
-#image-table {
-    width: 100%;
-    border: none;
-    border-spacing: 0;
-}
-
-#image-table td {
+.image-top ul, .image-bot ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    vertical-align: top;
-    width: 33.3%;
+    font-size: 0;
 }
 
-#image-table img {
+.image-top ul {
+    margin-top: 30px;
+}
+
+.image-bot ul {
+    margin-top: 50px;
+}
+
+.image-top li, .image-bot li {
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.image-top img, .image-bot img {
     width: 100%;
     max-width: 220px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 8px solid #0096FF;
+    transition: border 0.25s ease;
+}
+
+.image-top img:hover, .image-bot img:hover{
+    border: 16px solid #FF69B4;
+    border-radius: 12px;
 }
 
 #interested-text {
@@ -129,6 +153,17 @@ body {
 
 #logo-text {
     color: #0096FF;
-    text-shadow: 0 4px 8px #00c8ff;
-    -webkit-text-stroke-color: black;
+    text-shadow: 0 4px 4px #0062ff95;
+    -webkit-text-stroke: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-service th, .card-service td {
+    border: 3px solid #0096FF;
+    border-collapse: collapse;
+}
+
+.card-service th {
+    background-color: #FF69B4;
+    color: white;
 }
