@@ -1,0 +1,83 @@
+html {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+    display: flex;
+    width: 100%;
+}
+
+#logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.navlink ul li {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+.navlink {
+    margin-top: 50px;
+}
+
+.navlink ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px 0;
+    display: inline-block;
+    margin: 0;
+    transition: 0.25s linear;
+}
+
+.navlink a:hover {
+    text-decoration: underline solid blue 5px;
+    text-underline-offset: 8px;
+    transform: translateY(-4px);
+}
+
+.navlink a.active {
+    text-decoration: underline solid blue 5px;
+    text-underline-offset: 8px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto 0;
+}
+
+#banner img {
+    width: 100%;
+    border-radius: 8px;
+}
