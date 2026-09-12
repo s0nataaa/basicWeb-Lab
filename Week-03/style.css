@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #bungkus {
@@ -15,6 +15,7 @@ body {
 
 #logo img {
     width: 80px;
+    height: 80px;
 }
 
 #logo {
@@ -30,7 +31,7 @@ body {
     padding: 0;
 }
 
-#menu ul li {
+#menu ul li{
     list-style: none;
     padding: 0;
     display: inline-block;
@@ -43,9 +44,18 @@ body {
     padding: 30px 0;
 }
 
-#menu ul li a:hover,
+#menu a {
+    display: inline-block;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline solid blue 5px;
+    text-underline-offset: 8px;
+}
+
 #menu ul li a.active {
-    border-bottom: 5px solid;
+    text-decoration: underline solid blue 5px;
+    text-underline-offset: 8px;
 }
 
 #banner {
@@ -75,3 +85,10 @@ body {
 .box img {
     width: 320px;
 }
+
+#sub-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
