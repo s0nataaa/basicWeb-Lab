@@ -63,7 +63,6 @@ p {
 }
 
 .client-images img {
-    border-radius: 50%;
     padding: 10px;
     border: 8px solid lightblue;
     transition: all 0.25s ease;
@@ -157,7 +156,7 @@ p {
     text-align: end;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     #footer-wrapper {
         display: flex;
         flex-direction: column;
@@ -178,5 +177,9 @@ p {
     .sub-content {
         text-align: center;
         margin-top: 10px;
+    }
+
+    .navbar-nav {
+        text-align: right;
     }
 }
