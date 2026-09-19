@@ -9,11 +9,11 @@
 
 <body>
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light rounded-bottom p-3 tracking-tighter">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#">
-                <img src="images/web-development.png" width="80" alt="Logo">
+            <a id="logo" class="navbar-brand" href="#">
+                <img src="images/web-development.png"  alt="Logo">
             </a>
 
             <button class="navbar-toggler" type="button"
@@ -45,7 +45,7 @@
         </div>
     </nav>
 
-    <div id="banner" class="my-3">
+    <div id="banner" class="my-3 mt-3">
         <img src="images/banner1.jpg" class="img-fluid rounded-3" alt="Banner" />
     </div>
 
@@ -68,13 +68,13 @@
             <img src="images/banner2.jpg" alt="" class="img-fluid rounded-3">
         </div>
 
-        <div class="col-12 col-md-7">
+        <div class="sub-content col-12 col-md-7">
             <h2>Driving Innovation and Growth</h2>
             <p>Empower your enterprise with modern strategies and expert insights. We help you navigate market challenges and unlock new opportunities for long-term success.</p>
         </div>
     </div>
 
-    <hr>
+    <hr class="my-3">
 
     <div id="client-wrapper" class="mt-3 text-center">
         <h2 class="my-3">Our Client</h2>
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <hr>
+    <hr class="my-3">
 
     <div id="test-wrapper" class="mt-3 text-center">
         <h2 class="my-3">Testimonials</h2>
@@ -144,27 +144,26 @@
         </div>
     </div>
 
-    <footer id="footer-wrapper">
-        <div>
-            <h1>PT Tajir Mampus Corporation Inc.</h1>
-            <div class="foot-content">
-                <div class="foot-left">
+    <footer id="footer-wrapper" class="rounded-top mt-3 text-white p-4">
+        <div class="d-flex flex-column gap-0">
+            <h1 class="mb-3">PT Tajir Mampus Corporation Inc.</h1>
+            <div class="foot-content d-flex flex-row justify-content-between align-items-end mb-3">
+                <div class="foot-left d-flex flex-column">
                     <p>Dark Science Boulevard</p>
                     <p>Blok A1 No. 45</p>
                     <p>Gading Serpong, Tangerang</p>
-
-                </div>
-
+                </div>  
+                
                 <div class="foot-right">
-                    <div class="foot-images">
-                        <img src="images/facebook.png" alt="">
-                        <img src="images/instagram.png" alt="">
-                        <img src="images/youtube.png" alt="">
+                    <div class="foot-images d-flex justify-content-end gap-2">
+                        <img src="images/facebook.png" alt="" class="img-fluid rounded-circle">
+                        <img src="images/instagram.png" alt="" class="img-fluid rounded-circle">
+                        <img src="images/youtube.png" alt="" class="img-fluid rounded-circle">
                     </div>
-                    <p>Copyright &copy; 2022 | All Rights Reserved.</p>
+                    <p class="copyright">Copyright &copy; 2022 | All Rights Reserved.</p>
                 </div>
             </div>
-            <p>Tel.: (021) 123456789</p>
+            <p class="foot-tel mb-0">Tel.: (021) 123456789</p>
         </div>
     </footer>
 </div> 
