@@ -37,9 +37,17 @@ header {
     cursor: pointer;
 }
 
-.header-menu span:first-child {
+.fyp {
     font-weight: bold;
     border-bottom: 3px solid #1da1f2;
+}
+
+.follow {
+    transition: 0.25s ease;
+}
+
+.follow:hover {
+    border-bottom: 3px solid #1da1f25f;
 }
 
 .post {
@@ -93,13 +101,13 @@ header {
     display: flex;
     justify-content: space-between;
     color: #777;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 0 5px;
 }
 
 .icons span {
     cursor: pointer;
     transition: all 0.25s ease;
-    border-radius: 50%;
 }
 
 .icons span:hover {
@@ -108,7 +116,6 @@ header {
 
 .icons i {
     transition: all 0.25s ease;
-    border-radius: 50%;
 }
 
 .icons .bi-heart:hover:hover {
