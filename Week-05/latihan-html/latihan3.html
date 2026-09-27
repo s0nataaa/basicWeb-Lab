@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan3</title>
+</head>
+<body>
+    <script>
+        hour = Number(window.prompt("Jam Sekarang (1 - 24)"));
+
+        alert(cekHour(hour));
+
+        function cekHour(hour) {
+            if (hour <=10 && hour >= 6) {
+                return "Selamat Pagi";
+            } else if (hour <=14 && hour >= 11) {
+                return "Selamat Siang";
+            } else if (hour <=15 && hour >= 17) {
+                return "Selamat Sore";
+            } else if (hour <=18 && hour >= 22) {
+                return "Selamat Malam";
+            } else if (hour <=23 && hour >= 5) {
+                return "Selamat Tidur";
+            } else {
+                return "Invalid input, pelase input only 0 - 24 (integer)";
+            }
+        };
+    </script>
+</body>
+</html>

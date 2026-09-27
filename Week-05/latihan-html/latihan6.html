@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan6</title>
+</head>
+<body>
+    <script>
+        n = Number(window.prompt("Input angka integer"));
+
+        alert(displayN(n));
+
+        function displayN(n) {
+            if (isNaN(n)) {
+                    return "Input tidak valid";
+                }
+
+            if (n === 1) {
+                return "1 bukan bilangan prima ataupun bilangan komposit"
+            }
+            let displayprime = [];
+            
+            for (i = 2; i <= n; i++) {
+                let primeN = true;
+
+                for (j = 2; j < i; j++) {
+                    if (i % j === 0) {
+                        primeN = false;
+                        break;
+                    }
+                }
+
+                if (primeN) {
+                    displayprime.push(i);
+                }
+            }
+
+            return displayprime.join(", ");
+            }
+
+    </script>
+</body>
+</html>

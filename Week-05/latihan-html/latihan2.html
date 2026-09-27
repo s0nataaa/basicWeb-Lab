@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan2</title>
+</head>
+<body>
+
+    <script>
+        nMhs = Number(window.prompt("Jumlah Mahasiswa"));
+
+        for (i = 1; i <= nMhs; i++) {
+            nama = window.prompt("Nama");
+            tugas = window.prompt("Nilai Tugas");
+            uts = window.prompt("Nilai UTS");
+            uas = window.prompt("Nilai UAS");
+
+            let nilai = tugas * 0.3 + uts * 0.3 + uas * 0.4;
+
+            document.write("<br> <br>" + i + ". " + nama + "<br>");
+            document.write("Tugas: " + tugas);
+            document.write("<br />UTS: " + uts);
+            document.write("<br />UAS: " + uas);
+            document.write("<br>Nilai Akhir: ") + nilai.toFixed(2);
+            document.write("<br>Grade: " + cekNilai(nilai));
+        }
+
+            function cekNilai(nilai) {
+                if(nilai >= 85) {
+                    return "A";
+                } else if (nilai >= 80) {
+                    return "A-";
+                } else if (nilai >= 75) {
+                    return "B+";
+                } else if (nilai >= 70) {
+                    return "B";
+                } else if (nilai >= 65) {
+                    return "B-";
+                } else if (nilai >= 60) {
+                    return "C+";
+                } else if (nilai >= 55) {
+                    return "C";
+                } else if (nilai >= 45) {
+                    return "D";
+                } else if (nilai >= 0) {
+                    cheatCheck = window.prompt("Did the student Cheat?(Yes/No)").toLocaleLowerCase();
+                    if (cheatCheck === "no") {
+                        return "E";
+                    } else if(cheatCheck === "yes") {
+                        return "F";
+                    } else {
+                        return ("Input invalid");
+                    }
+                } else {
+                    return ("Input invalid");
+                }
+            }
+
+    </script>
+</body>
+</html>

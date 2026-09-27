@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan7</title>
+</head>
+<body>
+    <script>
+        senin = Number(window.prompt("Jumlah Mahasiswa masuk hari Senin"));
+        selasa = Number(window.prompt("Jumlah Mahasiswa masuk hari Selasa"));
+        rabu = Number(window.prompt("Jumlah Mahasiswa masuk hari Rabu"));
+        kamis = Number(window.prompt("Jumlah Mahasiswa masuk hari Kamis"));
+        jumat = Number(window.prompt("Jumlah Mahasiswa masuk hari Jumat"));
+
+        convert(senin, selasa, rabu, kamis, jumat);
+
+        function convert(senin, selasa, rabu, kamis, jumat) {
+            if (isNaN(senin) || isNaN(selasa) || isNaN(rabu) || isNaN(kamis) || isNaN(jumat)) {
+                    return "Input tidak valid";
+                }
+            
+            let arrSenin = [];
+            let arrSelasa = [];
+            let arrRabu = [];
+            let arrKamis = [];
+            let arrJumat = [];
+
+            
+            for (i = 1; i <= senin; i++) {
+                arrSenin.push("x")
+            }
+
+            for (i = 1; i <= selasa; i++) {
+                arrSelasa.push("x")
+            }
+
+            for (i = 1; i <= rabu; i++) {
+                arrRabu.push("x")
+            }
+
+            for (i = 1; i <= kamis; i++) {
+                arrKamis.push("x")
+            }
+
+            for (i = 1; i <= jumat; i++) {
+                arrJumat.push("x")
+            }
+
+            document.write('<h1 style="margin:0;">Grafik Jumlah Kehadiran Mahasiswa</h1>')
+            document.write("     Senin: " + arrSenin.join());
+            document.write("<br>Selasa: " + arrSelasa.join());
+            document.write("<br>  Rabu: " + arrRabu.join());
+            document.write("<br> Kamis: " + arrKamis.join());
+            document.write("<br> Jumat: " + arrJumat.join());
+                
+        }
+    </script>
+</body>
+</html>

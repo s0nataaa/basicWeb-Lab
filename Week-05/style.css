@@ -1,0 +1,132 @@
+body {
+    background: #f5f8fa;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 15px;
+}
+
+.header-wrapper span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.header-wrapper div {
+    display: flex;
+    margin-top: 10px;
+}
+
+.header-menu span{
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.header-menu span:first-child {
+    font-weight: bold;
+    border-bottom: 3px solid #1da1f2;
+}
+
+.post {
+    border-bottom: 1px solid #eee;
+    padding: 12px 15px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.post-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.handle {
+    color: #777;
+    font-size: 13px;
+}
+
+.desc {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 12px;
+    background: #ddd;
+    min-height: 200px;
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 16px;
+}
+
+.icons span {
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 50%;
+}
+
+.icons span:hover {
+    transform: scale(1.1);
+}
+
+.icons i {
+    transition: all 0.25s ease;
+    border-radius: 50%;
+}
+
+.icons .bi-heart:hover:hover {
+    color: #e0245e;
+    filter: drop-shadow(0 0 10px #e0245e);
+}
+
+.icons .bi-chat:hover, .bi-bar-chart:hover, .bi-share:hover {
+    color: #1da1f2;
+    filter: drop-shadow(0 0 10px #1da1f2);
+}
+
+.icons .bi-repeat:hover {
+    color: #17bf63;
+    filter: drop-shadow(0 0 10px #17bf63);
+}
+
+.icons .bi-bookmark:hover {
+    color: #ffd400;
+    filter: drop-shadow(0 0 10px #ffd400);
+}

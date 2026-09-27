@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        option = window.prompt("Menghitung luas atau keliling? (luas/keliling)").toLocaleLowerCase();
+        lebar = Number(window.prompt("Input Lebar"));
+        panjang = Number(window.prompt("Input Panjang"));
+
+        alert(compute(option, lebar, panjang));
+
+        function compute(option, lebar, panjang) {
+            if (option == "luas") {
+                result = lebar * panjang;
+                return result;
+            } else if (option == "keliling") {
+                result = 2 * (lebar + panjang);
+                return result;
+            }
+        }
+    </script>
+</body>
+</html>

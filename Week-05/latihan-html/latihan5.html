@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan5</title>
+</head>
+<body>
+    <script>
+        n = Number(window.prompt("Input angka integer"));
+
+        alert(displayN(n));
+
+        function displayN(n) {
+            if (isNaN(n)) {
+                    return "Input tidak valid";
+                }
+
+            if (n % 2 == 0) {
+                n -= 1;
+            }
+
+            let result = [];
+            for (i = 1; i <= n; i += 2) {
+                result.push(i);
+            }
+
+            return result.join(", ");
+        }
+    </script>
+</body>
+</html>

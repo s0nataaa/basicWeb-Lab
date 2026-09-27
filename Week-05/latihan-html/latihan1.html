@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan1</title>
+</head>
+<body>
+    <script>
+
+        nama = window.prompt("name");
+        nilai = window.prompt("nilai");
+        alert(cekNilai(nama, nilai));
+
+        function cekNilai(nama, nilai) {
+            if(nilai >= 85) {
+                return nama + ", Anda Mendapatkan A";
+            } else if (nilai >= 80) {
+                return nama + ", Anda Mendapatkan A-";
+            } else if (nilai >= 75) {
+                return nama + ", Anda Mendapatkan B+";
+            } else if (nilai >= 70) {
+                return nama + ", Anda Mendapatkan B";
+            } else if (nilai >= 65) {
+                return nama + ", Anda Mendapatkan B-";
+            } else if (nilai >= 60) {
+                return nama + ", Anda Mendapatkan C+";
+            } else if (nilai >= 55) {
+                return nama + ", Anda Mendapatkan C";
+            } else if (nilai >= 45) {
+                return nama + ", Anda Mendapatkan D";
+            } else if (nilai >= 0) {
+                cheatCheck = window.prompt("Did the student Cheat?(Yes/No)").toLocaleLowerCase();
+                if (cheatCheck === "no") {
+                    return nama + ", Anda Mendapatkan E";
+                } else if(cheatCheck === "yes") {
+                    return nama + ", Anda Mendapatkan F";
+                } else {
+                    return ("Input invalid");
+                }
+            } else {
+                return ("Input invalid");
+            }
+        }
+
+
+    </script>
+</body>
+</html>
