@@ -15,5 +15,8 @@ Each folder in this repository is organized by weekly course modules:
 - Bootsrap
 - Javascript
 
+## Week 5 Vercel Link
+https://basic-web-lab.vercel.app/
+
 ---
 *Created as part of the learning activities for the Basic Web Programming course at UMN.*
