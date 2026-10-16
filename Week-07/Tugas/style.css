@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapper {
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#chat-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem 2rem;
+}
+
+.msg {
+    padding: 0.5rem 1rem;
+    margin: 4px 0;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.msg-name {
+    font-weight: bold;
+}
+
+.msg-other {
+    background-color: lightpink;
+    text-align: left;
+}
+
+.msg-me {
+    background-color: lightblue;
+    text-align: right;
+}
+
+.chat-msg {
+    background: aliceblue;
+    border-top: 1px solid black;
+    padding: 2rem 1.5rem;
+}
+
+.chat-msg-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.chat-msg-col {
+    width: 50%;
+}
+
+.chat-msg-col label {
+    margin-bottom: 0;
+}
+
+.chat-msg-col input, .chat-msg-col textarea {
+    margin-bottom: 8px;
+}
+
+.chat-msg-col textarea{
+    resize: vertical;
+    height: 70px;
+}
+
+.btn-wrap {
+    text-align: center;
+}
+
+.btn-wrap .btn {
+    width: 80%;
+}
