@@ -20,12 +20,12 @@ function App() {
 
     return (
         <div>
-            <h1 style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>Hello World</h1>
-            <h2 style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>My Name is Raditya</h2>
-            <h3 style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>I am a handsome/pretty human being</h3>
-            <h4 style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>I love to learn JavaScript</h4>
-            <p id='p1' style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>I am a super high quality student</p>
-            <p id='p2' style={{transition: 'all 0.5s linear', color: generateRandomColor()}}>I am going to be a super star</p>
+            <h1 style={{transition: 'all 1s linear', color: generateRandomColor()}}>Hello World</h1>
+            <h2 style={{transition: 'all 1s linear', color: generateRandomColor()}}>My Name is Raditya</h2>
+            <h3 style={{transition: 'all 1s linear', color: generateRandomColor()}}>I am a handsome/pretty human being</h3>
+            <h4 style={{transition: 'all 1s linear', color: generateRandomColor()}}>I love to learn JavaScript</h4>
+            <p id='p1' style={{transition: 'all 1s linear', color: generateRandomColor()}}>I am a super high quality student</p>
+            <p id='p2' style={{transition: 'all 1s linear', color: generateRandomColor()}}>I am going to be a super star</p>
         </div>
     )
 }
