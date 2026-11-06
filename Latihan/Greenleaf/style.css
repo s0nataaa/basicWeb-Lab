@@ -1,0 +1,60 @@
+/* =========================================================
+    GreenLeaf Plant Store — custom styling (Feature 1 rubric:
+    "custom styling beyond Bootstrap defaults")
+   ========================================================= */
+
+:root {
+    --green-dark: #2f5233;
+    --green: #4c8c4a;
+    --green-light: #e9f3e6;
+    --cream: #faf7f0;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--cream);
+    color: #233023;
+}
+
+header {
+    background-color: var(--green-dark);
+}
+
+#home {
+    background-color: var(--green);
+}
+
+.gl-cart {
+    background-color: white;
+    color: var(--green-dark);
+}
+
+
+/*-----------FILTER----------*/
+.gl-filter.active {
+    border: 2px solid var(--green);
+    color: white;
+    background-color: var(--green);
+}
+
+.gl-filter {
+    border: 2px solid var(--green-dark);
+    transition: all 0.25s linear;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.gl-filter:hover, gl-filter.active:hover {
+    border: 2px solid var(--green-dark);
+    transform: translateY(-4px);
+    color: white;
+    background-color: var(--green-dark);
+    box-shadow: 0 4px 8px rgba(47, 82, 51, 0.3);
+}
+
+
+/*------FOOOTER--------*/
+#contact {
+    background-color: var(--green-dark);
+}
