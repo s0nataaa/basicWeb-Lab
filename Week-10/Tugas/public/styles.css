@@ -18,20 +18,18 @@ h1 {
 }
 
 .terms {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 880px;
+  max-width: 844px;
   margin: 0 auto;
   padding: 0 16px 40px;
 }
 
 .term {
-  flex: 0 1 270px;
   min-height: 165px;
   padding: 16px 18px;
-  background: #731328;
+  background: #731328;        
   border-radius: 3px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -54,4 +52,12 @@ h1 {
   font-size: 11px;
   line-height: 1.6;
   color: #FDEFD6;
+}
+
+@media (max-width: 860px) {
+  .terms { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .terms { grid-template-columns: 1fr; }
 }
